@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  background: url("bg.jpg") no-repeat center;
+  height: 100vh;
+  background-size: 100vw 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  background: linear-gradient(rgb(100, 245, 100), rgb(209, 209, 123));
+  width: 90vmin;
+  height: 92vmin;
+  border: 5px solid rgb(6, 7, 7);
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+}
+.food {
+  background: linear-gradient(rgb(253, 8, 8), rgb(247, 142, 6));
+  /* border: 8px solid rgb(194, 50, 50); */
+  border-radius: 15px;
+}
+.head {
+  background-color: rgb(145, 8, 8);
+  /* border: 8px solid rgb(14, 13, 13); */
+  border-radius: 10px;
+  transform: scale(1.09, 1.03);
+  /* border-radius: 12px; */
+}
+.snake {
+  background: linear-gradient(rgb(77, 15, 15), rgb(53, 3, 3));
+  /* border: 8px solid rgb(104, 32, 32); */
+  border-radius: 12px;
+}
+
+#scorebox {
+  position: absolute;
+  right: 170px;
+  top: 50px;
+  font-size: 2rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+#hiscorebox {
+  position: absolute;
+  right: 170px;
+  top: 10px;
+  font-size: 2rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
